@@ -1,0 +1,941 @@
+{
+  "defaults": {
+    "sheet": "auto",
+    "graph": "auto",
+    "axis_mode": "auto",
+    "header_mode": "keep",
+    "width": 2400
+  },
+  "templates": [
+    {
+      "id": "XRD1",
+      "graph_text_updates": [
+        {
+          "layer": 4,
+          "object": "Text",
+          "text": ""
+        },
+        {
+          "layer": 4,
+          "object": "Text1",
+          "text": ""
+        }
+      ],
+      "slide": 1,
+      "filename": "XRD1.opj",
+      "aliases": [
+        "XRD 1"
+      ],
+      "fixed_axes": {
+        "x": [
+          10,
+          80,
+          10
+        ]
+      },
+      "ui_compose": {
+        "mode": "loose_dataset",
+        "target_columns": [
+          "Book1_M",
+          "Book1_N",
+          "Book1_I",
+          "Book1_J",
+          "Book1_K",
+          "Book1_L"
+        ]
+      },
+      "ui_slots": [
+        {
+          "id": "top_sample",
+          "title": "上欄｜樣品圖譜",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "Book1_M"
+            },
+            {
+              "source": 1,
+              "target": "Book1_N"
+            }
+          ],
+          "default_name": "SAMPLE",
+          "text_target": {
+            "layer": 4,
+            "object": "Legend",
+            "format": "\\b({name})",
+            "preserve_right_edge": true
+          }
+        },
+        {
+          "id": "middle_reference",
+          "title": "中欄｜參考圖譜 1",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "Book1_I"
+            },
+            {
+              "source": 1,
+              "target": "Book1_J"
+            }
+          ],
+          "default_name": "Yttrium oxide",
+          "text_target": {
+            "layer": 5,
+            "object": "Legend",
+            "format": "\\l(1)\\b(\\f:Times New Roman({name}))",
+            "preserve_right_edge": true
+          }
+        },
+        {
+          "id": "bottom_reference",
+          "title": "下欄｜參考圖譜 2",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "Book1_K"
+            },
+            {
+              "source": 1,
+              "target": "Book1_L"
+            }
+          ],
+          "default_name": "Yttrium",
+          "text_target": {
+            "layer": 6,
+            "object": "Legend",
+            "format": "\\l(1) \\b(\\f:Times New Roman({name}))",
+            "preserve_right_edge": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "XRD2",
+      "slide": 2,
+      "filename": "XRD2.opj",
+      "aliases": [
+        "XRD 2"
+      ],
+      "fixed_axes": {
+        "x": [
+          10,
+          80,
+          10
+        ]
+      },
+      "ui_compose": {
+        "mode": "worksheet",
+        "target_columns": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H"
+        ]
+      },
+      "ui_slots": [
+        {
+          "id": "sample_1",
+          "title": "上欄｜樣品 1",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "G"
+            },
+            {
+              "source": 1,
+              "target": "H"
+            }
+          ],
+          "default_name": "exp-Nb2O5",
+          "text_target": {
+            "layer": 4,
+            "object": "Text",
+            "format": "\\b(\\c6({name}))",
+            "preserve_right_edge": true
+          }
+        },
+        {
+          "id": "sample_2",
+          "title": "第二欄｜樣品 2",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "E"
+            },
+            {
+              "source": 1,
+              "target": "F"
+            }
+          ],
+          "default_name": "SP-Nb2O5",
+          "text_target": {
+            "layer": 1,
+            "object": "Text2",
+            "format": "\\b({name})",
+            "preserve_right_edge": true
+          }
+        },
+        {
+          "id": "sample_3",
+          "title": "第三欄｜樣品 3",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "C"
+            },
+            {
+              "source": 1,
+              "target": "D"
+            }
+          ],
+          "default_name": "HD-Nb2O5",
+          "text_target": {
+            "layer": 1,
+            "object": "Text1",
+            "format": "\\b({name})",
+            "preserve_right_edge": true
+          }
+        },
+        {
+          "id": "standard",
+          "title": "第四欄｜參考圖譜",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "A"
+            },
+            {
+              "source": 1,
+              "target": "B"
+            }
+          ],
+          "default_name": "PDF#32-0711-Nb2O5",
+          "text_target": {
+            "layer": 1,
+            "object": "Text",
+            "format": "\\b({name})",
+            "preserve_right_edge": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "XRD3",
+      "slide": 3,
+      "filename": "XRD3.opj",
+      "aliases": [
+        "XRD 3"
+      ],
+      "fixed_axes": {
+        "x": [
+          10,
+          80,
+          10
+        ]
+      },
+      "ui_compose": {
+        "mode": "loose_dataset",
+        "target_columns": [
+          "Book2_E",
+          "Book2_F",
+          "Book2_A",
+          "Book2_B"
+        ]
+      },
+      "ui_slots": [
+        {
+          "id": "sample",
+          "title": "上欄｜樣品圖譜",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "Book2_E"
+            },
+            {
+              "source": 1,
+              "target": "Book2_F"
+            }
+          ],
+          "default_name": "s-TNO-1100-12h",
+          "text_target": {
+            "layer": 2,
+            "object": "Legend",
+            "format": "\\b({name})",
+            "preserve_right_edge": true
+          }
+        },
+        {
+          "id": "standard",
+          "title": "下欄｜參考圖譜",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "Book2_A"
+            },
+            {
+              "source": 1,
+              "target": "Book2_B"
+            }
+          ],
+          "default_name": "PDF#77-1374 TiNb2O7",
+          "text_target": {
+            "layer": 1,
+            "object": "Legend",
+            "format": "\\b({name})",
+            "preserve_right_edge": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "CHARGE_AND_DISCHARGE",
+      "slide": 4,
+      "filename": "CHARGE AND DISCHARGE.opj",
+      "aliases": [
+        "CHARGE AND DISCHARGE",
+        "CHARGE-DISCHARGE"
+      ],
+      "ui_variable": false,
+      "ui_min_slots": 1,
+      "ui_default_slots": 1,
+      "ui_compose": {
+        "mode": "worksheet",
+        "target_columns": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P",
+          "Q",
+          "R",
+          "S",
+          "T"
+        ]
+      },
+      "ui_slots": [
+        {
+          "id": "battery_file",
+          "title": "前三圈｜單一資料檔",
+          "default_name": "",
+          "source_columns": 2
+        }
+      ],
+      "ui_battery_cycles": true,
+      "ui_template_axis_fit": false,
+      "graph_text_updates": [
+        {
+          "layer": 1,
+          "object": "XB",
+          "text": "Specific Capacity (mAh/g)"
+        },
+        {
+          "layer": 1,
+          "object": "YL",
+          "text": "Voltage (V)"
+        }
+      ],
+      "hidden_layers": [
+        2
+      ]
+    },
+    {
+      "id": "C_RATE",
+      "slide": 5,
+      "filename": "C-RATE.opj",
+      "aliases": [
+        "C-RATE",
+        "CRATE"
+      ],
+      "ui_variable": true,
+      "ui_min_slots": 1,
+      "ui_default_slots": 3,
+      "ui_compose": {
+        "mode": "worksheet",
+        "target_columns": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "index_x_target": "A",
+        "index_start": 1
+      },
+      "ui_slots": [
+        {
+          "id": "series_1",
+          "title": "資料 1｜黑色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 1,
+              "target": "B"
+            }
+          ],
+          "default_name": "Pure"
+        },
+        {
+          "id": "series_2",
+          "title": "資料 2｜藍色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 1,
+              "target": "C"
+            }
+          ],
+          "default_name": "0.01 F"
+        },
+        {
+          "id": "series_3",
+          "title": "資料 3｜紅色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 1,
+              "target": "D"
+            }
+          ],
+          "default_name": "0.03 F"
+        }
+      ],
+      "ui_legend": {
+        "layer": 1,
+        "object": "Legend",
+        "preserve_right_edge": true,
+        "line_templates": [
+          "\\l(1.2) {name}",
+          "\\l(1.3) {name}",
+          "\\l(1.1) {name}"
+        ]
+      }
+    },
+    {
+      "id": "CYCLING",
+      "slide": 6,
+      "filename": "CYCLING.opj",
+      "ui_variable": true,
+      "ui_min_slots": 1,
+      "ui_default_slots": 3,
+      "ui_compose": {
+        "mode": "worksheet",
+        "target_columns": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J"
+        ],
+        "shared_x_target": "A",
+        "shared_x_source": 0,
+        "shared_y_source": 1
+      },
+      "ui_slots": [
+        {
+          "id": "series_1",
+          "title": "資料 1｜黑色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 1,
+              "target": "E"
+            }
+          ],
+          "default_name": "0.01Ce"
+        },
+        {
+          "id": "series_2",
+          "title": "資料 2｜藍色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 1,
+              "target": "H"
+            }
+          ],
+          "default_name": "0.01Ce+0.01F"
+        },
+        {
+          "id": "series_3",
+          "title": "資料 3｜紅色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 1,
+              "target": "G"
+            }
+          ],
+          "default_name": "0.01Ce+0.03F"
+        }
+      ],
+      "ui_legend": {
+        "layer": 1,
+        "object": "Text",
+        "preserve_right_edge": true,
+        "line_templates": [
+          "\\l(1)\\f:Times New Roman({name})",
+          "\\l(3)\\f:Times New Roman({name})",
+          "\\l(2)\\f:Times New Roman({name})"
+        ]
+      }
+    },
+    {
+      "id": "CV_TEST",
+      "slide": 7,
+      "filename": "CV-TEST.opj",
+      "aliases": [
+        "CV-TEST",
+        "CV"
+      ],
+      "ui_variable": true,
+      "ui_min_slots": 1,
+      "ui_default_slots": 3,
+      "ui_compose": {
+        "mode": "loose_dataset",
+        "target_columns": [
+          "Book1_A",
+          "Book1_B",
+          "Book1_C",
+          "Book1_D",
+          "Book1_E",
+          "Book1_F"
+        ]
+      },
+      "ui_slots": [
+        {
+          "id": "series_1",
+          "title": "資料 1｜灰色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "Book1_A"
+            },
+            {
+              "source": 1,
+              "target": "Book1_B"
+            }
+          ],
+          "default_name": "第一圈"
+        },
+        {
+          "id": "series_2",
+          "title": "資料 2｜紅色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "Book1_C"
+            },
+            {
+              "source": 1,
+              "target": "Book1_D"
+            }
+          ],
+          "default_name": "第二圈"
+        },
+        {
+          "id": "series_3",
+          "title": "資料 3｜藍色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "Book1_E"
+            },
+            {
+              "source": 1,
+              "target": "Book1_F"
+            }
+          ],
+          "default_name": "第三圈"
+        }
+      ],
+      "ui_legend": {
+        "layer": 1,
+        "object": "Legend",
+        "preserve_right_edge": true,
+        "line_templates": [
+          "\\l(1) {name}",
+          "\\l(2) {name}",
+          "\\l(3) {name}"
+        ]
+      }
+    },
+    {
+      "id": "EXCITATION",
+      "slide": 8,
+      "filename": "EXCITATION.opj",
+      "ui_variable": true,
+      "ui_min_slots": 1,
+      "ui_default_slots": 5,
+      "ui_compose": {
+        "mode": "worksheet",
+        "target_columns": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K"
+        ]
+      },
+      "ui_slots": [
+        {
+          "id": "series_1",
+          "title": "資料 1｜洋紅曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "A"
+            },
+            {
+              "source": 1,
+              "target": "B"
+            }
+          ],
+          "default_name": "Commercial"
+        },
+        {
+          "id": "series_2",
+          "title": "資料 2｜橘色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "C"
+            },
+            {
+              "source": 1,
+              "target": "D"
+            }
+          ],
+          "default_name": "Washed TC1-6 h"
+        },
+        {
+          "id": "series_3",
+          "title": "資料 3｜綠色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "E"
+            },
+            {
+              "source": 1,
+              "target": "F"
+            }
+          ],
+          "default_name": "Washed TC1-12 h"
+        },
+        {
+          "id": "series_4",
+          "title": "資料 4｜藍色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "G"
+            },
+            {
+              "source": 1,
+              "target": "H"
+            }
+          ],
+          "default_name": "Washed TC1-24 h"
+        },
+        {
+          "id": "series_5",
+          "title": "資料 5｜黑色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "I"
+            },
+            {
+              "source": 1,
+              "target": "K"
+            }
+          ],
+          "default_name": "Washed TC1-36 h"
+        }
+      ],
+      "ui_legend": {
+        "layer": 1,
+        "object": "Legend",
+        "preserve_right_edge": true,
+        "line_templates": [
+          "\\l(1)\\b( {name})",
+          "\\l(2)\\b( {name})",
+          "\\l(3)\\b( {name})",
+          "\\l(4)\\b( {name})",
+          "\\l(5)\\b( {name})"
+        ]
+      }
+    },
+    {
+      "id": "EMISSION",
+      "slide": 9,
+      "filename": "EMISSION.opj",
+      "ui_variable": true,
+      "ui_min_slots": 1,
+      "ui_default_slots": 4,
+      "ui_compose": {
+        "mode": "worksheet",
+        "target_columns": [
+          "A",
+          "B",
+          "D",
+          "F",
+          "H"
+        ],
+        "shared_x_target": "A",
+        "shared_x_source": 0,
+        "shared_y_source": 1
+      },
+      "ui_slots": [
+        {
+          "id": "series_1",
+          "title": "資料 1｜紅色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 1,
+              "target": "B"
+            }
+          ],
+          "default_name": "Commercial"
+        },
+        {
+          "id": "series_2",
+          "title": "資料 2｜藍色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 1,
+              "target": "D"
+            }
+          ],
+          "default_name": "flux sample"
+        },
+        {
+          "id": "series_3",
+          "title": "資料 3｜洋紅曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 1,
+              "target": "F"
+            }
+          ],
+          "default_name": "Sample 3"
+        },
+        {
+          "id": "series_4",
+          "title": "資料 4｜綠色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 1,
+              "target": "H"
+            }
+          ],
+          "default_name": "Sample 4"
+        }
+      ],
+      "ui_legend": {
+        "layer": 1,
+        "object": "Legend",
+        "preserve_right_edge": true,
+        "line_templates": [
+          "\\l(1)\\b({name})",
+          "\\l(2)\\b({name})",
+          "\\l(3)\\b({name})",
+          "\\l(4)\\b({name})"
+        ]
+      }
+    },
+    {
+      "id": "FTIR",
+      "slide": 10,
+      "filename": "FTIR.opj",
+      "ui_variable": true,
+      "ui_min_slots": 1,
+      "ui_default_slots": 6,
+      "ui_template_axis_fit": false,
+      "ui_compose": {
+        "mode": "worksheet",
+        "target_columns": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L"
+        ]
+      },
+      "ui_slots": [
+        {
+          "id": "series_1",
+          "title": "資料 1｜灰色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "A"
+            },
+            {
+              "source": 1,
+              "target": "B"
+            }
+          ],
+          "default_name": "base"
+        },
+        {
+          "id": "series_2",
+          "title": "資料 2｜紫色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "C"
+            },
+            {
+              "source": 1,
+              "target": "D"
+            }
+          ],
+          "default_name": "TiZn"
+        },
+        {
+          "id": "series_3",
+          "title": "資料 3｜橘色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "E"
+            },
+            {
+              "source": 1,
+              "target": "F"
+            }
+          ],
+          "default_name": "TiZrONO3"
+        },
+        {
+          "id": "series_4",
+          "title": "資料 4｜紅色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "G"
+            },
+            {
+              "source": 1,
+              "target": "H"
+            }
+          ],
+          "default_name": "6891"
+        },
+        {
+          "id": "series_5",
+          "title": "資料 5｜青色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "I"
+            },
+            {
+              "source": 1,
+              "target": "J"
+            }
+          ],
+          "default_name": "6893"
+        },
+        {
+          "id": "series_6",
+          "title": "資料 6｜綠色曲線",
+          "source_columns": 2,
+          "targets": [
+            {
+              "source": 0,
+              "target": "K"
+            },
+            {
+              "source": 1,
+              "target": "L"
+            }
+          ],
+          "default_name": "6896"
+        }
+      ],
+      "ui_legend": {
+        "layer": 1,
+        "object": "Legend",
+        "preserve_right_edge": true,
+        "line_templates": [
+          "\\l(1) {name}",
+          "\\l(2) {name}",
+          "\\l(3) {name}",
+          "\\l(4) {name}",
+          "\\l(5) {name}",
+          "\\l(6) {name}"
+        ]
+      }
+    },
+    {
+      "id": "PARTICLE_SIZE",
+      "slide": 11,
+      "filename": "PARTICLE SIZE.opj",
+      "aliases": [
+        "PARTICLE SIZE",
+        "PARTICLE-SIZE"
+      ]
+    }
+  ]
+}
